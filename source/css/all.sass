@@ -1,0 +1,406 @@
+@import compass
+@import sticky-footer
+@import font/_magistral-black
+@import "http://webfonts.ru/import/ptsans.css"
+@import "http://webfonts.ru/import/ptsans.css"
+
+body
+	font-family: 'PT Sans' !important
+	background: url('../img/base/fon.jpg') repeat
+	color: #333333
+	font-size: 16px
+	h1
+		font-size: 36px
+	h2
+		font-size: 30px
+	h3
+		font-size: 28px
+	h4
+		font-size: 26px
+	h5
+		font-size: 24px
+	h6
+		font-size: 22px
+	.md
+		font-size: 18px
+	.lg
+		font-size: 20px
+	.xlg
+		font-size: 43px
+.narrow
+	font-family: 'PT Sans Narrow'
+.container
+	width: 1050px !important
+	max-width: 1050px !important
+	min-width: 1050px !important
+	margin: 0 auto 
+.header
+	background-color: #3399ff
+	position: fixed
+	z-index: 1000
+	width: 100%
+	height: 130px
+	color: #fff
+	h1
+		font-family: 'magistralblack'
+	h1, h6, p
+		text-shadow: 0 2px 3px #666
+	.logo
+		padding-left: 40px
+		img
+			margin-top: 22px
+		p
+			font-size: 23px 
+	h1
+		margin-top: 11px
+	h6
+		margin-top: 14px
+.phone, .footer.phone
+	position: relative
+	height: 100%
+	float: right
+	img
+		margin-top: 21px
+		margin-left: 84px
+	a
+		text-decoration: none
+		p
+			font-size: 27px
+			float: right !important
+			margin-right: 26px
+			margin-top: 6px
+			color: #fff
+	a:last-child
+		position: absolute
+		bottom: 0
+		right: 41px
+		text-decoration: none
+		p
+			color: #663333
+			font-size: 24px
+			position: absolute
+			bottom: -2px
+			right: 30px
+			+text-shadow(0 1.2px 0 #fff)
+.nav
+	height: 56px
+	margin-top: 130px
+	background: url("../img/base/nav.jpg") repeat-x
+	text-align: center
+	.nav-list
+		margin-left: 10px
+		margin-top: 8px
+		li
+			margin-right: 38px
+		a
+			color: #666666
+		a:hover, a:active
+			color: #3399ff
+			text-decoration: none
+.main-foto
+	background: url('../img/photo/main-foto.jpg') no-repeat
+	width: 100%
+	height: 493px
+	box-shadow: inset 0 -0.7px 5px #666
+	h2
+		margin-top: 30px
+		margin-left: -4px
+		line-height: 30px
+	.form
+		padding-top: 38px
+		padding-left: 16px 
+		margin-left: 600px
+		width: 401px
+		height: 465px
+		position: relative
+		z-index: 100
+		background: url('../img/base/form.png') 1px 40px no-repeat
+		form
+			position: absolute
+			top: 155px
+			input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+				font-style: italic
+			input:-moz-placeholder, textarea:-moz-placeholder
+				font-style: italic
+			input, textarea
+				width: 305px
+				height: 40px
+				border: 1px solid #ccc
+				box-shadow: inset 0 1.7px 2px 0 #666
+				margin-left: 33px
+				margin-top: -2px
+				padding: 8px
+			textarea
+				height: 90px
+		.subm
+			position: relative
+			left: 37px
+			top: 7px
+			button
+				width: 300px
+				height: 48px
+				border: none
+				+box-shadow(0 0px 7px #999)
+				+border-radius(7px)
+				font-size: 24px
+				color: #666
+				+text-shadow(0 1.2px 0 #fff)
+				background: #fff535
+				background: -moz-linear-gradient(top, #fff535 -1%, #fff884 -1%, #fff884 0%, #fff884 0%, #fff884 0%, #fff535 2%, #fff535 2%, #fff000 3%, #fff535 3%, #ffbd00 94%, #ffb200 96%, #ac7700 100%)
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(-1%,#fff535), color-stop(-1%,#fff884), color-stop(0%,#fff884), color-stop(0%,#fff884), color-stop(0%,#fff884), color-stop(2%,#fff535), color-stop(2%,#fff535), color-stop(3%,#fff000), color-stop(3%,#fff535), color-stop(94%,#ffbd00), color-stop(96%,#ffb200), color-stop(100%,#ac7700))
+				background: -webkit-linear-gradient(top, #fff535 -1%,#fff884 -1%,#fff884 0%,#fff884 0%,#fff884 0%,#fff535 2%,#fff535 2%,#fff000 3%,#fff535 3%,#ffbd00 94%,#ffb200 96%,#ac7700 100%)
+				background: -o-linear-gradient(top, #fff535 -1%,#fff884 -1%,#fff884 0%,#fff884 0%,#fff884 0%,#fff535 2%,#fff535 2%,#fff000 3%,#fff535 3%,#ffbd00 94%,#ffb200 96%,#ac7700 100%)
+				background: -ms-linear-gradient(top, #fff535 -1%,#fff884 -1%,#fff884 0%,#fff884 0%,#fff884 0%,#fff535 2%,#fff535 2%,#fff000 3%,#fff535 3%,#ffbd00 94%,#ffb200 96%,#ac7700 100%)
+				background: linear-gradient(to bottom, #fff535 -1%,#fff884 -1%,#fff884 0%,#fff884 0%,#fff884 0%,#fff535 2%,#fff535 2%,#fff000 3%,#fff535 3%,#ffbd00 94%,#ffb200 96%,#ac7700 100%)
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff535', endColorstr='#ac7700',GradientType=0 )
+				&:focus
+					outline: none
+.separator
+	background: url('../img/base/nav-bottom.jpg') repeat-x
+	width: 100%
+	height: 95px
+	margin-bottom: 56px
+	+box-shadow(0 2px 1px 0 #ccc)
+	text-align: center
+	color: #3399ff
+	padding-top: 18px
+	padding-left: 11px
+	h3
+		margin-top: 0
+		margin-bottom: 4px
+		letter-spacing: 0.15px
+.services
+	position: relative
+	margin-bottom: 72px
+	padding-left: 101px
+	img
+		margin-left: 88px
+	h4
+		position: absolute
+		top: 8px 
+		left: 272px
+		color: white
+		text-align: center
+		line-height: 25px
+		letter-spacing: 0.16px
+	.circle
+		background: url('../img/base/circle.png') no-repeat
+		height: 245px
+		width: 250px
+		position: relative
+		margin-right: 42px
+		margin-top: 30px
+		img
+			position: absolute
+			top: 16px
+			left: 58px
+			margin-left: 0
+		p
+			position: absolute
+			top: 156px
+			left: 10px
+			text-align: center
+			width: 225px
+	.bottom-list
+		p
+			top: 182px
+			left: 18px
+.how
+	h2
+		position: absolute
+		top: 5px 
+		left: 280px
+		letter-spacing: 0.9px
+		color: white
+		text-align: center
+		margin-bottom: 29px 
+.how, .how-video
+	position: relative
+	img
+		margin-left: 188px
+		margin-bottom: 65px
+	h2
+		margin-bottom: 30px
+	.how-list
+		margin-left: 10px
+	.thumbnail
+		width: 144px
+		background-color: transparent
+		border: none
+		margin-left: 2px
+		color: #3399ff
+		text-align: center
+		img
+			margin-bottom: 20px
+		a, a:hover
+			text-decoration: none
+			color: #3399ff
+		p
+			margin: 0 -20px 0 -20px
+		p:after
+			content: url('../img/base/next.png')
+			position: absolute
+			top: 35px
+			left: 128px
+		&:last-child p:after
+			content: ""
+.about-us
+	background: url('../img/base/about.png') no-repeat
+	width: 845px
+	height: 455px
+	margin: 45px auto 0 auto
+	padding-top: 30px
+	h3
+		color: #3399ff
+		margin-left: -7px
+	.text
+		width: 510px
+		margin-left: 290px
+		margin-top: 40px
+		line-height: 22px
+.comments
+	width: 100%
+	margin-bottom: 85px
+	h3, .lg 
+		color: #3399ff
+	h3
+		margin-bottom: 26px
+		margin-top: 2px
+	p
+		margin-bottom: -1px
+	.lg
+		margin-bottom: 3px
+		margin-top: -3px
+	a, a:hover
+		color: #3399ff
+		text-decoration: underline
+	.media-body
+		padding-left: 10px
+		width: 290px
+		.narrow
+			margin-top: 10px
+			line-height: 19px
+	.comment-left
+		padding-left: 55px
+.footer
+	width: 100%
+	height: 130px 
+	background-color: #3399ff 
+	+box-shadow(0 -0.7px 3px 0 #666)
+	color: #fff
+	p
+		+text-shadow(0 2px 3px #666)
+	.info
+		a, a:hover
+			text-decoration: none
+			color: #fff
+		p
+			margin-left: 40px
+			line-height: 22px
+		p:first-child
+			margin: 27px 0 0 21px
+.nav-video
+	background-color: #f6f6f6
+	height: 40px
+	color: #999999
+	padding-left: 20px
+	padding-top: 10px
+	+box-shadow(inset 0 2.3px 3px -1px #666)
+	ol
+		padding: 0 15px
+		background-color: tramsparent
+		a, a:hover
+			text-decoration: none
+			color: #999999
+.project, .install, .video-recorder, .remote-access
+	padding-left: 27px
+	.md
+		line-height: 22px
+	h6
+		margin-top: 20px
+		margin-bottom: 20px
+	img
+		margin-right: 53px
+		margin-top: 24px
+		float: left
+		width: 320px
+		border-radius: 5px
+		+box-shadow(0 2.3px 6px -2px #666)
+	h1
+		margin-bottom: 29px
+	h2
+		margin-top: 30px
+		margin-bottom: 20px
+	.descript
+		width: 645px
+		margin-left: 300px
+.remote-access
+	.plus
+		width: 445px
+		margin: 0 auto
+.benefits
+	background-color: #eef6ff
+	height: 370px
+	+box-shadow(0 2px 0 0 #e9ecef)
+	margin-top: 20px
+	margin-bottom: 20px
+	.benefits-item
+		background-color: transparent
+		border: none
+		margin-top: 40px
+.call-form
+	background-color: #eef6ff
+	height: 250px
+	+box-shadow(0 2px 0 0 #e9ecef)
+	margin-top: 20px
+	margin-bottom: 20px
+	h5
+		margin-top:  20px
+	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+		font-style: italic
+		font-size: 18px
+	input:-moz-placeholder, textarea:-moz-placeholder
+		font-style: italic
+		font-size: 18px
+	input, textarea
+		width: 305px
+		height: 40px
+		border: 1px solid #ccc
+		+box-shadow(inset 0 1.7px 2px 0 #c7c7c7)
+		+border-radius(3px)
+		margin-left: 33px
+		margin-top: 10px
+		padding: 15px
+	textarea
+		height: 90px
+		padding-top: 10px
+		padding-left: 10px 
+	.set
+		margin-left: -10px
+		margin-top: 5px
+	.set-text
+		margin-left: -39px
+		margin-top: 5px
+	.subm
+		position: relative
+		left: 378px
+		top: 19px
+		button
+			width: 260px
+			height: 40px
+			border: none
+			+box-shadow(0 0px 7px #999)
+			+border-radius(7px)
+			font-size: 24px
+			color: #666
+			+text-shadow(0 1.2px 0 #fff)
+			background: #fff535
+			background: -moz-linear-gradient(top, #fff535 -1%, #fff884 -1%, #fff884 0%, #fff884 0%, #fff884 0%, #fff535 2%, #fff535 2%, #fff000 3%, #fff535 3%, #ffbd00 94%, #ffb200 96%, #ac7700 100%)
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(-1%,#fff535), color-stop(-1%,#fff884), color-stop(0%,#fff884), color-stop(0%,#fff884), color-stop(0%,#fff884), color-stop(2%,#fff535), color-stop(2%,#fff535), color-stop(3%,#fff000), color-stop(3%,#fff535), color-stop(94%,#ffbd00), color-stop(96%,#ffb200), color-stop(100%,#ac7700))
+			background: -webkit-linear-gradient(top, #fff535 -1%,#fff884 -1%,#fff884 0%,#fff884 0%,#fff884 0%,#fff535 2%,#fff535 2%,#fff000 3%,#fff535 3%,#ffbd00 94%,#ffb200 96%,#ac7700 100%)
+			background: -o-linear-gradient(top, #fff535 -1%,#fff884 -1%,#fff884 0%,#fff884 0%,#fff884 0%,#fff535 2%,#fff535 2%,#fff000 3%,#fff535 3%,#ffbd00 94%,#ffb200 96%,#ac7700 100%)
+			background: -ms-linear-gradient(top, #fff535 -1%,#fff884 -1%,#fff884 0%,#fff884 0%,#fff884 0%,#fff535 2%,#fff535 2%,#fff000 3%,#fff535 3%,#ffbd00 94%,#ffb200 96%,#ac7700 100%)
+			background: linear-gradient(to bottom, #fff535 -1%,#fff884 -1%,#fff884 0%,#fff884 0%,#fff884 0%,#fff535 2%,#fff535 2%,#fff000 3%,#fff535 3%,#ffbd00 94%,#ffb200 96%,#ac7700 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff535', endColorstr='#ac7700',GradientType=0 )
+			&:focus
+				outline: none
